@@ -1,0 +1,399 @@
+@charset "utf-8";
+/* CSS Document estilos20111027.css*/
+* {
+	margin:0px;
+	padding:0px;
+}
+
+body{
+text-align:center;
+margin:0 auto;
+font-size: 62.5%; /* Para saber de donde sale esto, ver http://www.cosassencillas.com/articulos/pixeles-ems-tamano-letra-css */
+}
+
+
+
+/* Enlaces en general */
+/* Atributos por defecto a menos que se especifique lo contrario en la clase (class)*/
+a:link{
+	font-size        : 1.1em; /* Para saber de donde sale esto, ver http://www.cosassencillas.com/articulos/pixeles-ems-tamano-letra-css */
+	color			   : #cc3300;
+	text-decoration  : none;
+	font-family      : Verdana, Arial, Helvetica, sans-serif;
+} 
+a:visited {
+	font-size        : 1.1em;
+	color			   : #660000;
+	text-decoration  : none;
+	font-family      : Verdana, Arial, Helvetica, sans-serif;
+}
+
+a:hover {
+  font-size        : 1.1em;
+  color            : #660000;
+  text-decoration  : underline;
+}
+
+
+img {
+  border: 0;
+}
+
+/* Tomado de otra plantilla para probar presentación de listas*/
+ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-image: none;
+	list-style-type: none;
+}
+
+li
+{
+line-height: 15px;
+padding-left: 6px;
+padding-top: 0px;
+
+}
+#contenedor #cuerpo_informacion #marco_gris-sinrelleno #contenido_seccion ul {
+	margin-bottom: 10px;
+}
+#contenedor #cuerpo_informacion #marco_gris-sinrelleno #contenido_seccion li {
+	list-style-position: inside;
+	line-height: 20px;
+	list-style-image: url(../imagenes/triangulogris.gif);
+}
+#contenedor #cuerpo_informacion #marco_gris-sinrelleno #contenido_seccion h3 {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+/* Prueba listas*/
+
+
+hr {
+  background       : #CCCCCC;
+  height           : 1px;
+  width            : 100%;
+}
+
+h1 {
+	/*	font-family: Verdana, Arial, Helvetica, sans-serif;*/
+	font-size: 2em;
+	font-weight: bold;
+	color: #999999;
+	margin-top: 12px;
+}
+
+#contenedor
+{
+	width:760px;
+	margin:0 auto;
+	border:0;
+	line-height:130%;
+	text-align: left;
+	font-size : 1.1em; /* Para saber de donde sale esto, ver http://www.cosassencillas.com/articulos/pixeles-ems-tamano-letra-css */
+	font-family: Verdana, Arial, Helvetica, sans-serif; /*estilo de letra por defecto*/
+}
+#contenedor #cuerpo_informacion #marco_gris-sinrelleno {
+	padding: 0px;
+	margin-bottom: 15px;
+	border: 1px solid #CCCCCC;
+}
+#contenedor #cuerpo_informacion #marco_gris-sinrelleno #contenido_seccion {
+	float: right;
+	width: 568px;
+	text-align: justify;
+	padding-right: 12px;
+	padding-left: 10px;
+}
+#contenedor #cuerpo_informacion #marco_gris-sinrelleno #menu_seccion {
+	width: 150px;
+	background-color: #f2f2f2;
+	padding: 8px;
+
+}
+
+#menu_seccion li {
+	list-style-position: inside;
+	list-style-image: url(../imagenes/triangulorojo8x10.gif);
+	list-style-type: none;
+	line-height: 20px;
+}
+
+#contenedor #cuerpo_informacion #marco_gris-sinrelleno #contenido_seccion img {
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
+/****************encabezado************/
+
+#encabezado {
+	background-color: #FFFFFF;
+	width: auto;
+	height: auto;
+	clear: left;
+}
+#logosimbolo {
+	width: 261px;
+	height: 31px;
+	float: left;
+	padding-left: 17px;
+	padding-right: 70px;
+	padding-top: 15px;
+	padding-bottom: 8px;
+}
+#imagen_aleatoria {
+	height: 54px;
+	width: 412px;
+	margin-right: auto;
+	margin-left: 348px;
+	text-align: right;
+}
+
+#menu_horizontal { /*Menú horizontal del encabezado: Buscar | directorio | Biblioteca*/
+	float: none;
+	width: auto;
+	height: 22px;
+	vertical-align: top;
+	clear:left;
+	background-image: url(../imagenes/barra/barrarriba-sin-nombres760.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-top: 2px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 386px;
+	line-height: 1.375em;
+}
+a.menu_horizontal {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #666666;
+}
+
+
+ul.menu_horizontal> li > ul /* Solo para los ul debajo de los li de primer nivel. */
+{
+   position:absolute;
+   left:-41px;
+   top:19px;
+   display:none;
+   list-style:none;
+}
+ul.menu_horizontal > li /* Sólo para li de primer nivel */
+{
+	display:inline;
+	border-right-style: hidden;
+	padding-right: 4px;
+	/*line-height: 10px;*/
+}
+
+
+/*** Fin encabezado **/
+
+
+
+/****Identificación de la dependencia***/
+#nombre_dependencia {
+	width: auto;
+	font-size: 1.1em;
+	font-style: normal;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#contenedor #cuerpo_informacion #contenidos_izquierda {
+	float: left;
+	width: 670px;
+}
+#contenedor #cuerpo_informacion #trama_derecha {
+	width: 90px;
+	margin-left: 670px;
+	text-align: right;
+}
+
+#nombre_dependencia .ruta_pertenencia {
+	color: #333333;
+	margin-bottom: 10px;
+}
+
+
+/**** Fin Identificación de la dependencia***/
+
+
+
+
+
+/* Menú superior horizontal con pestañas y enlaces hacia las secciones de la dependencia*/
+#navegacion {
+	padding: 10px 0px 0px 0px;
+/*	float: left;*/
+	width: auto;
+}
+
+#navegacion #mainlevel-nav
+{
+    padding-left:0px;/*Espacio que rodea el bloque de pestañas ul*/
+    padding-right:0px;
+    padding-top:4px;
+    padding-bottom:6px;
+	margin-left: 0px; /* Margenes de todo el bloque pestañas más linea base*/
+	margin-top:2px;
+	border-bottom: 1px solid /*#778*/#cccccc; /* Línea base de las pestañas (borde inferior del ul): grosor, tipo y color*/
+	font:normal 1.0em Verdana, Arial, Helvetica,sans-serif;
+}
+
+#navegacion #mainlevel-nav li
+{
+	list-style: none;
+	margin: 0;
+	display: inline;
+	/*anula laa características de imagen que debería aparecer por defecto*/
+	background-image: none; 
+	padding-left: 0px;
+}
+
+
+#navegacion #mainlevel-nav li a
+{
+/* Espaciado alrededor del enlace dentro de la pestaña*/
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:3px;
+    padding-bottom:1px;
+	margin-left: 2px; /*Separación entre pestañas*/
+	border: 1px solid #cccccc;
+	border-bottom: none; /*Las pestañas no tienen borde inferior*/
+	background-color:#F2F2F2; /* Fondo de las pestañas */
+}
+
+#navegacion #mainlevel-nav li a:link {
+/*color:brown;*/
+font-family:Verdana,Arial,Helvetica,sans-serif;
+font-size:1.0em;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+line-height:normal;
+text-decoration:none;
+text-transform:none;
+ }
+
+#navegacion #mainlevel-nav li a:hover
+{
+color:black;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+font-size:1.0em;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+line-height:normal;
+text-decoration:underline;
+text-transform:none;
+}
+
+
+
+#navegacion #mainlevel-nav li a#active_menu 
+{
+background: white;
+color:black;
+border-bottom: 1px solid white;
+}
+#marco_superior_gris, #marco_superior_gris1, #marco_superior_gris2, #marco_superior_pie {
+	background-color: #999999;
+	width: auto;
+	margin-bottom: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	text-align: left;
+	background-image: url(../imagenes/esquinagris.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 14px;
+	padding-bottom: 4px;
+	padding-left: 25px;
+	color: #FFFFFF;
+	font-weight: bold;
+	vertical-align: middle;
+}
+#contenedor #marco_superior_pie {
+	text-align: center;
+}
+
+
+#marco_gris, #marco_gris1, #marco_gris2, #marco_gris3 {
+	width: auto;
+	border: 1px solid #CCCCCC;
+	margin-bottom: 15px;
+	padding: 12px;
+}
+/*#marco_gris1 {
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}*/
+
+
+
+
+   .clearfloat { /* esta clase debe colocarse en un elemento div o break y debe ser el último elemento antes del cierre de un contenedor que incluya completamente a un elemento flotante */
+    	clear:both;
+        height:0;
+        font-size: 0.01em;
+        line-height: 0px;
+    }
+#actualidad1, #actualidad2, #actualidad3{
+	width: auto;
+	text-align: justify;
+	margin-bottom: 20px;
+}
+#actualidad1 img {
+	text-align: right;
+	float: right;
+	overflow: visible;
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+
+#cuerpo_informacion {
+	width: auto;
+	margin-top: 8px;
+}
+#actualidad2 img {
+	float: left;
+	margin-right: 15px;
+}
+
+
+
+
+
+#pie {
+	padding:10px;
+	background-color:#FFFFFF;
+	clear:left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	/*	font-size: 1em;*/
+	background-position: center;
+	text-align: center;
+	border: 1px solid #CCCCCC;
+}
+#marco_gris1  li {
+	list-style-type: disc;
+	margin-left: 25px;
+	margin-bottom: 10px;
+}
+#contenedor #cuerpo_informacion #contenidos_izquierda #marco_gris1 {
+	background-color: #F2F2F2;
+}
+#contenedor #cuerpo_informacion #contenidos_izquierda #marco_gris #redes_sociales {
+	text-align: right;
+	margin-top: 25px;
+}
